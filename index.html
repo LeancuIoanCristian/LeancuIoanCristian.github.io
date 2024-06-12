@@ -1,7 +1,51 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="static/styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <nav class="bg-light border navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><span class="blue">Ioan</span><span class="yellow">Cristian</span><span class="red">Leancu</span>
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html"></a>           </li>
+                        <li class="nav-item"><a class="nav-link" href="games.html">Games Development</a></li>
+                        <li class="nav-item"><a class="nav-link" href="harvard.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="extra.html">Extra-Curriculum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="me.html">About Me</a></li>
+                    </ul>
+
+                    <button class="nav-item" onclick="darkMode()">Darkmode</button>
+                    <button class="nav-item" onclick="lightMode()">LightMode</button>
+                    <script>
+                        function darkMode() {
+                            let element = document.body;
+                            element.className = "dark-mode";
+                        }
+                        function lightMode() {
+                            let element = document.body;
+                            element.className = "light-mode";
+                        }
+                    </script>
+                </div>
+            </div>
+        </nav>
+        <div class  = "left">
+            <h2 style="text-align: center;">Welcome to my Website</h2>
+            <h4>My name is <b>Ioan Leancu</b>.<br><br>
+             I have a major in <abbr title = "Computer Games Technology"> CGT </abbr> and I am following multiple courses of <abbr title = "Computer Science">CS </abbr>. I am a Game and Software Developer and a Private Tutor.<br>You can find more details about me and my work using the navigation bar at the top.<br><br> Have fun and enjoy!
+            </h4>
+            <img src="images\ICL-01-PHOTO OF CYCLE.jpg" width = 100%>
+        </div>
+    </body>
 </html>
