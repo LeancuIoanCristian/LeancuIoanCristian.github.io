@@ -1,51 +1,85 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <link href="static/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Webpage</title>
+        <title>Ioan Leancu - Home</title>
     </head>
     <body>
         <nav class="bg-light border navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand"><span class="blue">Ioan</span><span class="yellow">Cristian</span><span class="red">Leancu</span>
-                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                <a class="navbar-brand" href="index.html"><span class="blue">Ioan</span><span class="yellow">Cristian</span><span class="red">Leancu</span></a>
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler d-md-none" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav me-auto mt-2">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="games.html">Games Development</a></li>
-                        <li class="nav-item"><a class="nav-link" href="harvard.html">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="extra.html">Extra-Curriculum</a></li>
-                        <li class="nav-item"><a class="nav-link" href="me.html">About Me</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" aria-current="page" href="index.html" aria-label="Home">
+                                <i class="bi bi-house-door-fill"></i><span class="d-md-none ms-2">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="about-me.html" aria-label="About Me">
+                                <i class="bi bi-person-fill"></i><span class="d-md-none ms-2">About Me</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="AIDev.html" aria-label="AI Engineering">
+                                <i class="bi bi-cpu-fill"></i><span class="d-md-none ms-2">AI Engineering</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="software-games-dev.html" aria-label="Software & Games Development">
+                                <i class="bi bi-code-slash"></i><span class="d-md-none ms-2">Software & Games Dev</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="courses-certs.html" aria-label="Courses & Certifications">
+                                <i class="bi bi-mortarboard-fill"></i><span class="d-md-none ms-2">Courses & Certifications</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="extra-curricular.html" aria-label="Extra-Curricular">
+                                <i class="bi bi-star-fill"></i><span class="d-md-none ms-2">Extra-Curricular</span>
+                            </a>
+                        </li>
                     </ul>
-
-                    <button class="nav-item" onclick="darkMode()">Darkmode</button>
-                    <button class="nav-item" onclick="lightMode()">LightMode</button>
-                    <script>
-                        function darkMode() {
-                            let element = document.body;
-                            element.className = "dark-mode";
-                        }
-                        function lightMode() {
-                            let element = document.body;
-                            element.className = "light-mode";
-                        }
-                    </script>
+                    <button id="modeToggle" class="btn btn-outline-dark ms-auto mt-2 mt-md-0" onclick="toggleMode()" aria-label="Toggle Dark/Light Mode">
+                        <i class="bi bi-lightbulb-fill"></i><span class="d-md-none ms-2">Toggle Mode</span>
+                    </button>
                 </div>
             </div>
         </nav>
-        <div class  = "left">
-            <h2 style="text-align: center;">Welcome to my Website</h2>
-            <h4>My name is <b>Ioan Leancu</b>.<br><br>
-             I have a major in <abbr title = "Computer Games Technology"> CGT </abbr> and I am following multiple courses of <abbr title = "Computer Science">CS </abbr>. I am a Game and Software Developer and a Private Tutor.<br>You can find more details about me and my work using the navigation bar at the top.<br><br> Have fun and enjoy!
-            </h4>
-            <img src="images\ICL-01-PHOTO OF CYCLE.jpg" width = 100%>
-        </div>
+
+        <header class="header">
+            <div class="container">
+                <h1>Welcome to My Website</h1>
+                <p class="lead">My name is <b>Ioan Leancu</b>.</p>
+                <p class="lead">
+                    I have a major in <abbr title="Computer Games Technology">CGT</abbr> and I am following multiple courses of <abbr title="Computer Science">CS</abbr>.
+                    I am a Game and Software Developer and a Private Tutor.
+                    You can find more details about me and my work using the navigation bar at the top.<br><br> Have fun and enjoy!
+                </p>
+            </div>
+        </header>
+
+        <section class="section container text-center">
+            <h2>Featured Projects</h2>
+            <p>Explore some of my impactful work in AI Engineering and Software Development.</p>
+            <div class="d-grid gap-4 col-6 mx-auto"> <a href="AIDev.html" class="btn btn-primary btn-lg">View AI Engineering Projects</a>
+                <a href="software-games-dev.html" class="btn btn-secondary btn-lg">View Software & Games Projects</a>
+            </div>
+        </section>
+
+        <section class="section container text-center">
+            <img src="images/ChatGPT Image Jun 9, 2025, 09_40_07 AM.png" class="img-fluid rounded" alt="Ioan Leancu Profile Picture">
+        </section>
+
+        <script src="static/script.js"></script>
     </body>
 </html>

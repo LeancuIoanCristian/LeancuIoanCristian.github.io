@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="static/styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Games</title>
+    </head>
+    <body>
+        <nav class="bg-light border navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><span class="blue">Ioan</span><span class="yellow">Cristian</span><span class="red">Leancu</span></a>
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-me.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="AIDev.html">AI Engineering</a></li>
+                        <li class="nav-item"><a class="nav-link" href="software-games-dev.html">Software & Games Dev</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses-certs.html">Courses & Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="extra-curricular.html">Extra-Curricular</a></li>
+                    </ul>
+                    <button id="modeToggle" class="btn btn-outline-dark" onclick="toggleMode()">
+                        <i class="fas fa-lightbulb"></i>
+                    </button>
+
+                    <script src="static/functionality.js"></script>
+                </div>
+            </div>
+        </nav>
+
+        <div id = "descrition">
+            <h1>Welcome to my games page</h1>
+            <h2>Here are some of my games i made during and outside of university.</h2>
+        </div>
+        <div style = "overflow: auto; width: 100%;">
+            <div class = "right">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><h5>Escape The Crime Scene - Team Project(Unity)</h5></td>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td><img src="images/Screenshot 2023-02-27 225928.png" width = 100%></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <details>
+                                    <summary>
+                                        <b>More Details</b>
+                                    </summary>
+                                    <p>
+                                        A short game where the player has to hide all the clues related to the crime and leave the scene, before the cops arrive.<br><br>Personal contributions:
+                                        <ul>
+                                            <li>UI: created the UI pop-ups and feedback for the game.</li>
+                                            <li>Level Design: determinating the layout of the map and placement of the interactables. </li>
+                                            <li>Testing: tested the map and fine tuned the times and placements in such a way it would not be to hard or easy for the player to complete the objective.</li>
+                                            <li>Prototyping Mechanics and UI: prototyped different mechanics linked to specific UI.</li>
+                                        </ul>>
+                                    </p>
+                                </details>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class ="right">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><h5>Proceduraly Generated Terrain - Solo Tool Project(Unity)</h5></td>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td><video width = 100% controls><source src = "images/Procedural Terrain.mp4" type = "video/mp4"></video></td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <details>
+                                    <summary>
+                                        <b>More Details</b>
+                                    </summary>
+                                    <p>
+                                        Created a tool system for procedurally generating a terrain that can use Perlin Noise, Worley Noise and/or both to create a terrain toghether with its mesh and texture.
+                                    </p>
+                                </details>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class ="right">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><h5>Prototype - Car Game(Unity)</h5></td>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td><img src = "images\Screenshot 2023-12-14 091051.png" width = 100%></img></td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <details>
+                                    <summary>
+                                        <b>More Details</b>
+                                    </summary>
+                                    <p>
+                                        Created a small project presenting the capacities of wheel colliders. I used an procedural obstacle placer, created by me, so the player will have a purpose within the artefact: collect coins and avoid obstalces.
+                                    </p>
+                                </details>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class ="right">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><h5>Prototype - Endless runner(Solo Unity)</h5></td>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td><img src = "images\Screenshot 2023-05-25 164137.png" width = 100%></img></td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <details>
+                                    <summary>
+                                        <b>More Details</b>
+                                    </summary>
+                                    <p>
+                                        Created a small project similar to an endless runner. The objects are activated and deactivated every time the chunk is brought to the initial position. The player has to avoid the red cubes, collect coins and optionally can heal with the green spheres. The game becomes more difficult over time as the speed of the chunks gets faster and faster. The game has a saving system which allows for upgrades for the player like more life, a one use shield and others.                                   </p>
+                                </details>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class ="right">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><h5>Endless runner - Team Project(Unity)</h5></td>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td><img src = "images\Player.png" width = 100%></img></td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <details>
+                                    <summary>
+                                        <b>More Details</b>
+                                    </summary>
+                                    <p>
+                                        A short endless runner game.<br><br>Personal contributions:
+                                        <ul>
+                                            <li>Assets: Created some of the assets for the game (all assets within this project are made by the team from the ground up)</li>
+                                            <li>Level Design: helped with the design of the level transitions to a higher/lower area. </li>
+                                            <li>Testing: tested the game to make sure it has a comfortable level of difficulty.</li>
+                                            <li>Prototyping Mechanics : prototyped different mechanics for the player and chunk pool generation.</li>
+                                        </ul>>
+                                    </p>
+                                </details>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class ="right">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><h5>Tools - Saving and Upgrade System(Unity)</h5></td>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td><img src = "images\Screenshot 2023-05-07 161941.png" width = 100%></img></td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <details>
+                                    <summary>
+                                        <b>More Details</b>
+                                    </summary>
+                                    <p>
+                                        A small tool for creating saving and shop systems. The artefact has an usable player, randomly spawning coins and a shop. The coins are spawned by a manager in a defined, changeable volume and limited in number. The coins can be used in the shop for different upgrades like additional jumps.
+                                    </p>
+                                </details>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class ="right">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><h5>Prototype - Procedural Texture(Unreal)</h5></td>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td><img src = "images\Screenshot 2022-03-07 104820.png" width = 85%></img></td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <details>
+                                    <summary>
+                                        <b>More Details</b>
+                                    </summary>
+                                    <p>
+                                        A small survival/escape game where you can hunt animals and interact with shrines in order to leave the area. Main attraction is the terrain texture thar procedurally applies specific or mixture of sub-textures in order to give a smooth transition between the the higher and lower areas on the map.
+                                    </p>
+                                </details>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class ="right">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><h5>Prototype - Procedural Objects Placement(Unity)</h5></td>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td><img src = "images\Screenshot 2023-08-03 060253.png" width = 85%></img></td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <details>
+                                    <summary>
+                                        <b>More Details</b>
+                                    </summary>
+                                    <p>
+                                        A prototype for a procedural object placer. It takes a plane which can be resized. Depending on the available area, the manager will set a maximum number of objects it can spawn. This can be tweaked for lower values. The objects will afterwards be placed in such a way that none will overlap. The maximum amount of objects at the time in the scene allowed by the editor manager is 2000 spawned units, though, through code you can spawn up to 11000 units with little to now delay. The placer can spawn AIs, interactable objects and obstalces.
+                                    </p>
+                                </details>
+                            </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
