@@ -9,6 +9,7 @@ body {
     line-height: 1.6; /* Slightly increased line height for better readability */
     margin: 0;
     text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark/light mode */
 }
 
 .container {
@@ -132,8 +133,6 @@ nav .btn {
 }
 
 /* Specific Card Styles for Qualifications - AI, SD, GD */
-/* These can be used to add unique visual cues like subtle borders or background images/icons */
-
 .card.skill-ai {
     border-top: 5px solid #007bff; /* Distinct blue top border for AI */
 }
@@ -143,21 +142,6 @@ nav .btn {
 .card.skill-gd {
     border-top: 5px solid #fd7e14; /* Orange top border for Game Dev */
 }
-
-/* You could add background images for icons here if desired. Example: */
-/*
-.card.skill-ai .card-body::before {
-    content: '';
-    display: block;
-    float: right;
-    width: 40px;
-    height: 40px;
-    background-image: url('../images/ai-icon.png'); // Replace with actual path to your icon
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 15px;
-}
-*/
 
 /* Button Styling (used for call-to-action buttons) */
 .btn-primary {
@@ -242,7 +226,7 @@ nav .btn {
 }
 
 /* Dark Mode Styling */
-.dark-mode {
+body.dark-mode {
     background-color: #1a1a1a; /* Dark background */
     color: #e0e0e0; /* Light text color */
 }
@@ -255,6 +239,10 @@ nav .btn {
 
 .dark-mode .card-title {
     color: #90b8ff; /* Lighter blue for dark mode card titles */
+}
+
+.dark-mode .card-subtitle {
+    color: #ced4da !important; /* Lighter muted text color for dark mode */
 }
 
 .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
@@ -300,4 +288,39 @@ nav .btn {
 .dark-mode .btn-outline-dark:hover {
     background-color: #e0e0e0;
     color: #1a1a1a;
+}
+
+.dark-mode .footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-top-color: #495057;
+}
+
+.dark-mode a {
+    color: #8ab4f8; /* Lighter blue for dark mode */
+}
+
+.dark-mode a:hover {
+    color: #a6caff;
+}
+
+body.dark-mode .footer {
+    background-color: #212529 !important; /* Darker footer background */
+    color: #f8f9fa !important; /* Light text */
+    border-top-color: #495057 !important;
+}
+
+body.dark-mode .list-group {
+    background-color: #343a40 !important; /* Should be dark */
+    border-color: #6c757d !important;
+}
+
+body.dark-mode .list-group-item {
+    background-color: #343a40 !important; /* Should be dark */
+    color: #f8f9fa !important; /* Should be light text */
+    border-color: #6c757d !important;
+}
+
+body.dark-mode .list-group-item a { /* If you have links in list items */
+    color: #f8f9fa !important;
 }
