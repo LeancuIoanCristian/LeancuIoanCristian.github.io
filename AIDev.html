@@ -19,7 +19,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav me-auto mt-2">
                         <li class="nav-item">
-                            <a class="nav-link active d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="index.html" aria-label="Home">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="index.html" aria-label="Home">
                                 <i class="bi bi-house-door-fill"></i><span class="d-md-none ms-2">Home</span>
                             </a>
                         </li>
@@ -29,7 +29,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" aria-current="page" href="AIDev.html" aria-label="AI Engineering">
+                            <a class="nav-link active d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" aria-current="page" href="AIDev.html" aria-label="AI Engineering">
                                 <i class="bi bi-cpu-fill"></i><span class="d-md-none ms-2">AI Engineering</span>
                             </a>
                         </li>
@@ -67,37 +67,94 @@
             <h2>Deep Learning & Research Projects</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Deep Learning for Financial Prediction</h5>
                             <p class="card-text">Engineered and optimized Deep Learning models for complex financial predictions in stock market analysis, achieving >90% accuracy on currency exchange (GBP to EUR), earning Distinction grades.</p>
-                            <a href="#" class="btn btn-primary btn-sm mt-2">View Details (Coming Soon)</a>
+
+                            <button class="btn btn-primary btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#financialDetails" aria-expanded="false" aria-controls="financialDetails">
+                                View More Details
+                            </button>
+
+                            <div class="collapse mt-3" id="financialDetails">
+                                <div class="card card-body bg-light">
+                                    <h6>Project Overview:</h6>
+                                    <p>This research involved developing advanced Recurrent Neural Network (RNN) architectures, specifically LSTMs, to predict fluctuations in foreign exchange markets. The models were trained on historical financial data, including various currency pairs and macroeconomic indicators, demonstrating a robust ability to identify trends and patterns.</p>
+                                    <h6>Key Achievements:</h6>
+                                    <ul>
+                                        <li>Achieved over 90% accuracy in predicting GBP to EUR currency movements.</li>
+                                        <li>Implemented robust data preprocessing pipelines for time-series financial data.</li>
+                                        <li>Utilized TensorFlow for model development and optimization.</li>
+                                        <li>Received Distinction for the novel application and high accuracy of the prediction models.</li>
+                                    </ul>
+                                    <h6>Technologies Used:</h6>
+                                    <p>Python, TensorFlow, Pandas, NumPy, Scikit-learn</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Antimicrobial Resistance (AMR) Mutation Prediction</h5>
                             <p class="card-text">Designed and implemented innovative Deep Learning models for Antimicrobial Resistance (AMR) mutation prediction, earning Distinction grades for the novel model architecture and preparing work for publication.</p>
-                            <a href="#" class="btn btn-primary btn-sm mt-2">View Details (Coming Soon)</a>
+
+                            <button class="btn btn-primary btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#amrDetails" aria-expanded="false" aria-controls="amrDetails">
+                                View More Details
+                            </button>
+
+                            <div class="collapse mt-3" id="amrDetails">
+                                <div class="card card-body bg-light">
+                                    <h6>Project Overview:</h6>
+                                    <p>This project focused on leveraging Deep Learning to predict gene mutations associated with Antimicrobial Resistance (AMR). By analyzing genomic sequence data, the models aimed to identify resistance patterns and potential new mutations, contributing significantly to the fight against antibiotic resistance.</p>
+                                    <h6>Key Achievements:</h6>
+                                    <ul>
+                                        <li>Designed and implemented novel Deep Learning architectures tailored for genomic sequence analysis.</li>
+                                        <li>Achieved Distinction grades for the innovative approach and significant predictive capabilities.</li>
+                                        <li>Prepared research work for potential publication, showcasing rigorous methodology and impactful results.</li>
+                                        <li>Contributed to understanding complex biological data through AI-driven insights.</li>
+                                    </ul>
+                                    <h6>Technologies Used:</h6>
+                                    <p>Python, PyTorch, BioPython, NumPy, Scikit-learn</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Computer Vision System Architectures</h5>
                             <p class="card-text">Developed and deployed Computer Vision systems utilizing novel Deep Learning architectures, showcasing practical expertise in image processing and pattern recognition for diverse applications.</p>
-                            <a href="#" class="btn btn-primary btn-sm mt-2">View Details (Coming Soon)</a>
+
+                            <button class="btn btn-primary btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#computerVisionDetails" aria-expanded="false" aria-controls="computerVisionDetails">
+                                View More Details
+                            </button>
+
+                            <div class="collapse mt-3" id="computerVisionDetails">
+                                <div class="card card-body bg-light">
+                                    <h6>Project Overview:</h6>
+                                    <p>This work involved the development and deployment of various Computer Vision systems. The focus was on creating and optimizing Deep Learning architectures for tasks suchs as image recognition, object detection, and segmentation, providing practical solutions for diverse visual data challenges.</p>
+                                    <h6>Key Achievements:</h6>
+                                    <ul>
+                                        <li>Successfully executed complex Computer Vision tasks using state-of-the-art Deep Learning models.</li>
+                                        <li>Designed and implemented novel architectures for improved accuracy and efficiency in image processing.</li>
+                                        <li>Demonstrated practical expertise in applying AI to real-world visual data applications.</li>
+                                        <li>Gained hands-on experience with dataset preparation and model evaluation for computer vision tasks.</li>
+                                    </ul>
+                                    <h6>Technologies Used:</h6>
+                                    <p>Python, OpenCV, TensorFlow, Keras, Scikit-image</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">AWS Academy Machine Learning Foundations</h5>
                             <p class="card-text">Completed comprehensive training in fundamental Machine Learning concepts and practical application of AWS ML services, building a strong cloud-based AI foundation.</p>
@@ -105,6 +162,17 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <h2>Key Technologies & Tools</h2>
+            <p class="lead">Proficient in leading AI/ML frameworks and programming languages for robust development:</p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                <span class="badge bg-primary fs-5 p-3">Python</span>
+                <span class="badge bg-success fs-5 p-3">TensorFlow</span>
+                <span class="badge bg-info text-dark fs-5 p-3">PyTorch</span>
+                <span class="badge bg-warning text-dark fs-5 p-3">OpenCV</span>
             </div>
         </section>
 
@@ -122,6 +190,13 @@
                 </div>
             </div>
         </section>
+
+        <footer class="footer bg-light py-4 border-top text-center">
+            <div class="container">
+                <p class="mb-0">&copy; 2025 Ioan Leancu. All rights reserved.</p>
+                <p class="mb-0">Connect with me on <a href="https://www.linkedin.com/in/ioan-cristian-leancu/" target="_blank" class="text-decoration-none">LinkedIn <i class="bi bi-linkedin"></i></a></p>
+            </div>
+        </footer>
 
         <script src="static/script.js"></script>
     </body>

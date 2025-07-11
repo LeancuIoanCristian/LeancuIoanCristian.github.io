@@ -1,81 +1,162 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <link href="static/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ME</title>
+        <title>Ioan Leancu - About Me</title>
     </head>
     <body>
-        <nav class="bg-light border navbar navbar-expand-md navbar-light">
+       <nav class="bg-light border navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><span class="blue">Ioan</span><span class="yellow">Cristian</span><span class="red">Leancu</span></a>
-                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler d-md-none" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav me-auto mt-2">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about-me.html">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="AIDev.html">AI Engineering</a></li>
-                        <li class="nav-item"><a class="nav-link" href="software-games-dev.html">Software & Games Dev</a></li>
-                        <li class="nav-item"><a class="nav-link" href="courses-certs.html">Courses & Certifications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="extra-curricular.html">Extra-Curricular</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="index.html" aria-label="Home">
+                                <i class="bi bi-house-door-fill"></i><span class="d-md-none ms-2">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" aria-current="page" href="about-me.html" aria-label="About Me">
+                                <i class="bi bi-person-fill"></i><span class="d-md-none ms-2">About Me</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="AIDev.html" aria-label="AI Engineering">
+                                <i class="bi bi-cpu-fill"></i><span class="d-md-none ms-2">AI Engineering</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="software-games-dev.html" aria-label="Software & Games Development">
+                                <i class="bi bi-code-slash"></i><span class="d-md-none ms-2">Software & Games Dev</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="courses-certs.html" aria-label="Courses & Certifications">
+                                <i class="bi bi-mortarboard-fill"></i><span class="d-md-none ms-2">Courses & Certifications</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-block px-2 px-sm-3 px-md-4 px-lg-5 py-4" href="extra-curricular.html" aria-label="Extra-Curricular">
+                                <i class="bi bi-star-fill"></i><span class="d-md-none ms-2">Extra-Curricular</span>
+                            </a>
+                        </li>
                     </ul>
-                    <button id="modeToggle" class="btn btn-outline-dark" onclick="toggleMode()">
-                        <i class="fas fa-lightbulb"></i>
+                    <button id="modeToggle" class="btn btn-outline-dark ms-auto mt-2 mt-md-0" onclick="toggleMode()" aria-label="Toggle Dark/Light Mode">
+                        <i class="bi bi-lightbulb-fill"></i><span class="d-md-none ms-2">Toggle Mode</span>
                     </button>
-
-                    <script src="static/functionality.js"></script>
                 </div>
             </div>
         </nav>
-        <div class = "left">
-            <h2>Welcome to ME page</h2>
-            <h4>Here are some ways to contact me and ask questions.</h4>
-            <hr>
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 50%;">Contact way</th>
-                        <th style="width: 50%;">Link/Submision</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>LinkedIn</td>
-                        <td><a href="https://www.linkedin.com/in/ioan-cristian-leancu/" target="_blank">LinkedIn -> ioan-cristian-leancu</a></td>
-                    </tr>
-                    <tr>
-                        <td>Gmail</td>
-                        <td>lnccristian01@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <hr>
+        <header class="header">
+            <div class="container">
+                <h1>About Me</h1>
+                <p class="lead">Research Student & Software Developer</p>
+                <p>MSc Artificial Intelligence specialist with a Distinction-level academic record in Deep Learning for Financial and Antimicrobial Resistance Prediction and Computer Vision. Proven Software Developer, credited with improving mobile game revenues by up to 50% through feature development and infrastructure improvements. Experienced in developing robust backend solutions within Agile/DevOps and proficient in Python, TensorFlow, C# and C++.</p>
+            </div>
+        </header>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 50%;">Other Websites</th>
-                        <th style="width: 50%;">Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Github</td>
-                        <td><a href="https://github.com/LeancuIoanCristian" target="_blank">Github -> Leancu Ioan Cristian</a></td>
-                    </tr>
-                    <tr>
-                        <td>Steam</td>
-                        <td><a href="https://steamcommunity.com/profiles/76561198799303540/" target="_blank">Steam -> Assaroth</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <section class="section container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Programming Languages</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Python (Proficient)</li>
+                                <li class="list-group-item">C# (Proficient)</li>
+                                <li class="list-group-item">C++ (Experienced)</li>
+                                <li class="list-group-item">JavaScript (Experienced)</li>
+                                <li class="list-group-item">SQL (Experienced)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">AI & Machine Learning</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">TensorFlow</li>
+                                <li class="list-group-item">PyTorch</li>
+                                <li class="list-group-item">OpenCV</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development & Frameworks</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Django</li>
+                                <li class="list-group-item">Flask</li>
+                                <li class="list-group-item">Next.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Methodologies & Other Tools</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Agile, SCRUM, TDD, OOP</li>
+                                <li class="list-group-item">Data Processing</li>
+                                <li class="list-group-item">Firebase</li>
+                                <li class="list-group-item">Unity</li>
+                                <li class="list-group-item">Unreal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <h2>Contact & Other Websites</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Information</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Email:</strong> <a href="mailto:cristianioanleancu@gmail.com">cristianioanleancu@gmail.com</a></li>
+                                <li class="list-group-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ioan-cristian-leancu/" target="_blank">ioan-cristian-leancu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Other Online Presence</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>GitHub:</strong> <a href="https://github.com/LeancuIoanCristian" target="_blank">LeancuIoanCristian</a></li>
+                                <li class="list-group-item"><strong>Steam:</strong> <a href="https://steamcommunity.com/profiles/76561198799303540/" target="_blank">Assaroth</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer bg-light py-4 border-top text-center">
+            <div class="container">
+                <p class="mb-0">&copy; 2025 Ioan Leancu. All rights reserved.</p>
+                <p class="mb-0">Connect with me on <a href="https://www.linkedin.com/in/ioan-cristian-leancu/" target="_blank" class="text-decoration-none">LinkedIn <i class="bi bi-linkedin"></i></a></p>
+            </div>
+        </footer>
+
+        <script src="static/script.js"></script>
     </body>
 </html>
